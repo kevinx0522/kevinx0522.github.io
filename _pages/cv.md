@@ -9,37 +9,35 @@ redirect_from:
 
 {% include base_path %}
 
+# Kaiwen Xiong
+**x_kevin@sjtu.edu.cn**
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Automation, Shanghai Jiao Tong University, 2023 -- 2027 (expected)
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Assistant** Feb 2025 -- Present
+  * **Institute**: AIMING Lab, UNC-Chapel Hill
+  * **Research Topic**: placeholder
+  * **Supervisor**: Huaxiu Yao
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Algorithms Research Intern** Jun 2025 -- Sep 2025
+  * **Institute**: Manycore Research Institute, Manycore Tech.
+  * **Research Topic**: placeholder
+  * **Supervisor**: Zihan Zhou
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **Research Assistant** Oct 2023 -- Oct 2024
+  * **Institute**: The State Key Laboratory of Mechanical System and Vibration, Shanghai Jiao Tong University
+  * **Research Topic**: Autonomous observation and control of unmanned aerial vehicles
+  * **Supervisor**: Wei Dong
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming**: Python, C/C++, MATLAB, $$\LaTeX$$
+* **Tools**: Pytorch/Huggingface ecosystem, LLaMA-Factory, vLLM, verl, Git, Vim, Adobe Photoshop
+* **Language**: TOEFL 95 (Reading 29, Listening 25, Speaking 20, Writing 21)
 
 Publications
 ======
@@ -47,7 +45,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -61,4 +59,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

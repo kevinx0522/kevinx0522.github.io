@@ -24,12 +24,12 @@ author:
   # Biographic information
   avatar           : "AUTHOR_KaiwenXiong.png"
   name             : "Kaiwen Xiong"
-  pronouns         :  # example: "he/him" 
-  bio              : "Short biography for the left-hand sidebar"
+  pronouns         : "x_kevin@sjtu.edu.cn"  # example: "he/him" 
+  bio              : "Year 3 undergraduate"
   location         : "Shanghai, CN"
   employer         : "Shanghai Jiao Tong University"
   uri              : # URL
-  email            : "x_kevin@sjtu.edu.cn" 
+  email            : 
 
   # Academic websites
   academia         : # URL
