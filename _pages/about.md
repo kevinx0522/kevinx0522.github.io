@@ -7,7 +7,12 @@ redirect_from:
   - /about.html
 ---
 
+I am a 3-year undergraduate at [School of Automation and Intelligent Sensing](https://automation.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/).
+Currently, I am working with Prof. [Huaxiu Yao](https://www.huaxiuyao.io/) as a research assistant.
+In 2025, I spent a wonderful summer as an algorithm research intern in [Manycore Tech](https://www.manycoretech.com/), advised by [Zihan Zhou](https://zihan-z.github.io/).
+Before that, in 2024, I worked as an undergraduate research assistant at Institute of Robotics, [School of Mechanical Engineering](https://me.sjtu.edu.cn/en/), [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/), advised by [Wei Dong](https://me.sjtu.edu.cn/teacher_directory1/dongwei1.html).
 
+I am deeply interested in Multimodal Large Language Models and AI agents, together with their applications in diverse fields.
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
