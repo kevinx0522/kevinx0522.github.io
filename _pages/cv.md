@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# Kaiwen Xiong
+# Kaiwen Xiong (熊恺文)
 **x_kevin@sjtu.edu.cn**
 
 Education
