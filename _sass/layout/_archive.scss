@@ -84,6 +84,17 @@
   }
 }
 
+/* 图片左浮动样式 */
+.archive__item-image {
+  img {
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  &:hover img {
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+  }
+}
+
 
 /*
    List view
@@ -104,6 +115,13 @@
 
   .page__meta {
     margin: 0 0 4px;
+  }
+
+  /* 清除浮动，确保布局正确 */
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
