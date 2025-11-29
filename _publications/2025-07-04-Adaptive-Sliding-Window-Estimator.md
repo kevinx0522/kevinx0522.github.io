@@ -13,6 +13,8 @@ citation: 'Kaiwen Xiong, Sijia Chen, Wei Dong, "An Adaptive Sliding Window Estim
 authors: "Kaiwen Xiong, Sijia Chen, Wei Dong"
 current_author: "Kaiwen Xiong"
 image: "https://github.com/kevinx0522/kevinx0522.github.io/blob/master/_publications/2025-07-04-Adaptive-Sliding-Window-Estimator.md"
+header:
+  teaser: "https://github.com/kevinx0522/kevinx0522.github.io/blob/master/_publications/2025-07-04-Adaptive-Sliding-Window-Estimator.md"
 ---
 We propose an adaptive sliding window estimator equipped with an estimation reliability evaluator, where the states, noise covariance matrices, and aerial drag are estimated simultaneously.
 
