@@ -14,6 +14,7 @@ authors: "Kaiwen Xiong, Sijia Chen, Wei Dong"
 current_author: "Kaiwen Xiong"
 image: "images/publication/RASWE_graphical_abstract.png"
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+We propose an adaptive sliding window estimator equipped with an estimation reliability evaluator, where the states, noise covariance matrices, and aerial drag are estimated simultaneously.
+<left><img src="[2.png](https://github.com/kevinx0522/kevinx0522.github.io/blob/master/images/publication/RASWE_graphical_abstract.png)" alt="9" style="zoom:50%;" /></left>
 
 
