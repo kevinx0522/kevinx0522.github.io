@@ -32,18 +32,18 @@ Work experience
   * **Institute**: The State Key Laboratory of Mechanical System and Vibration, Shanghai Jiao Tong University
   * **Research Topic**: Autonomous observation and control of unmanned aerial vehicles
   * **Advisor**: Wei Dong
-  
-Skills
-======
-* **Programming**: Python, C/C++, MATLAB, $$\LaTeX$$
-* **Tools**: Pytorch/Huggingface ecosystem, LLaMA-Factory, vLLM, verl, Git, Vim, Adobe Photoshop
-* **Language**: TOEFL 95 (Reading 29, Listening 25, Speaking 20, Writing 21)
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+  
+Skills
+======
+* **Programming**: Python, C/C++, MATLAB, $$\LaTeX$$
+* **Tools**: Pytorch/Huggingface ecosystem, LLaMA-Factory, vLLM, verl, Git, Vim, Adobe Photoshop
+* **Language**: TOEFL 95 (Reading 29, Listening 25, Speaking 20, Writing 21)
   
 <!-- Talks
 ======
