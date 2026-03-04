@@ -26,15 +26,17 @@
       </div>
     {% endif %}
 
-    <!-- 新增：侧边图片显示 -->
-    {% if post.image and include.type == "list" %}
-      <div class="archive__item-image" style="float: left; margin-right: 1rem; margin-bottom: 0.5rem; width: 25%; max-width: 200px;">
-        {% assign image_path = post.image %}
-        {% unless image_path contains "://" %}
-          {% assign image_path = image_path | prepend: "/" | prepend: base_path %}
-        {% endunless %}
-        <img src="{{ image_path }}" alt="{{ title }}" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      </div>
+    {% if post.image and include.type != "grid" %}
+      <!-- 左图右文布局：flex 容器 -->
+      <div style="display: flex; gap: 1.2rem; align-items: flex-start;">
+        <div class="archive__item-image" style="flex: 0 0 160px; max-width: 160px;">
+          {% assign image_path = post.image %}
+          {% unless image_path contains "://" %}
+            {% assign image_path = image_path | prepend: base_path %}
+          {% endunless %}
+          <img src="{{ image_path }}" alt="{{ title }}" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+        </div>
+        <div style="flex: 1; min-width: 0;">
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
@@ -44,8 +46,8 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    
-    <!-- 改进的作者信息显示，支持共同一作标记 -->
+
+    <!-- 作者信息，支持共同一作标记 -->
     {% if post.authors %}
       <div class="archive__item-authors" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: #666;">
         {% assign author_list = post.authors | split: ", " %}
@@ -65,32 +67,31 @@
           {% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% if has_first_authors %}
-          <span style="font-size: 0.8rem; color: #888; margin-left: 0.5rem;">(* indicates co-first authors)</span>
+          <span style="font-size: 0.8rem; color: #888; margin-left: 0.5rem;">(* equal contribution)</span>
         {% endif %}
       </div>
     {% endif %}
-    
+
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.collection == 'publications' %}
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.date %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
     {% endif %}
-    
-    <!-- 在publication页面不显示citation，只显示下载链接 -->
+
     {% if include.type == "cv" %}
-      <!-- CV页面显示完整的citation信息 -->
+      <!-- CV 页面显示完整 citation -->
       {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
         <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Paper</a> | <a href="{{ post.slidesurl }}">Slides</a> | <a href="{{ post.bibtexurl }}">Bibtex</a></p>
       {% elsif post.citation and post.paperurl and post.slidesurl %}
@@ -100,7 +101,7 @@
       {% elsif post.citation and post.paperurl %}
         <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Paper</a></p>
       {% elsif post.citation and post.slidesurl and post.bibtexurl %}
-        <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Slides</a> | <a href="{{ post.bibtexurl}}">Bibtex</a></p>
+        <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Slides</a> | <a href="{{ post.bibtexurl }}">Bibtex</a></p>
       {% elsif post.citation and post.slidesurl %}
         <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Slides</a></p>
       {% elsif post.citation and post.bibtexurl %}
@@ -108,9 +109,9 @@
       {% elsif post.citation %}
         <p>Recommended citation: {{ post.citation }}</p>
       {% elsif post.paperurl and post.bibtexurl %}
-        <p><a href=" {{ post.paperurl }} ">Paper</a> | <a href="{{ post.bibtexurl }}">Bibtex</a></p>
+        <p><a href="{{ post.paperurl }}">Paper</a> | <a href="{{ post.bibtexurl }}">Bibtex</a></p>
       {% elsif post.paperurl %}
-        <p><a href=" {{ post.paperurl }} ">Paper</a></p>
+        <p><a href="{{ post.paperurl }}">Paper</a></p>
       {% elsif post.slidesurl and post.bibtexurl %}
         <p><a href="{{ post.slidesurl }}">Slides</a> | <a href="{{ post.bibtexurl }}">Bibtex</a></p>
       {% elsif post.slidesurl %}
@@ -119,7 +120,7 @@
         <p><a href="{{ post.bibtexurl }}">Bibtex</a></p>
       {% endif %}
     {% else %}
-      <!-- publication页面只显示下载链接，不显示citation -->
+      <!-- Publications 页面只显示链接，不显示 citation -->
       {% if post.paperurl and post.slidesurl and post.bibtexurl %}
         <p><a href="{{ post.paperurl }}">Paper</a> | <a href="{{ post.slidesurl }}">Slides</a> | <a href="{{ post.bibtexurl }}">Bibtex</a></p>
       {% elsif post.paperurl and post.slidesurl %}
@@ -137,6 +138,10 @@
       {% endif %}
     {% endif %}
 
-  </article>
+    {% if post.image and include.type != "grid" %}
+        </div><!-- end content div -->
+      </div><!-- end flex container -->
+    {% endif %}
+
   </article>
 </div>

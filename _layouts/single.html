@@ -47,6 +47,16 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+        {% if page.image %}
+          {% assign image_path = page.image %}
+          {% unless image_path contains "://" %}
+            {% assign image_path = image_path | prepend: base_path %}
+          {% endunless %}
+          <div style="margin: 1.5rem 0; text-align: center;">
+            <img src="{{ image_path }}" alt="{{ page.title }}" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+          </div>
+        {% endif %}
+
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.paperurl and page.slidesurl %}

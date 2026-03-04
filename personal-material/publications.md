@@ -41,7 +41,52 @@ Jiaqi Liu, Kaiwen Xiong, Peng Xia, Yiyang Zhou, Haonian Ji, Lu Feng, Siwei Han, 
 
 ---
 
-## 2. An Adaptive Sliding Window Estimator for Positioning of Unmanned Aerial Vehicle Using a Single Anchor
+## 2. Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails
+
+### 基本信息
+
+| 字段 | 内容 |
+|------|------|
+| 发表时间 | 2026-2-11 |
+| 发表平台 | arXiv preprint |
+| arXiv 链接 | https://arxiv.org/abs/2510.04860v2 |
+| 类型 | Conference / Preprint |
+
+### 作者
+
+Siwei Han, **Kaiwen Xiong**, Jiaqi Liu, Xinyu Ye, Yaofeng Su, Wenbo Duan, Xinyuan Liu, Cihang Xie, Mohit Bansal, Mingyu Ding, Linjun Zhang, Huaxiu Yao
+
+其中 Siwei Han 和 Kaiwen Xiong 是 equal contribution
+
+### 摘要
+
+We identify the Alignment Tipping Process, a critical post-deployment risk unique to self-evolving LLM agents. We formalize and analyze Alignment Tipping Process through two complementary paradigms: Self-Interested Exploration, where repeated high-reward deviations induce individual behavioral drift, and Imitative Strategy Diffusion, where deviant behaviors spread across multi-agent systems
+
+### Teaser 图
+
+`images/ATP.png`
+
+### 引用格式
+
+Siwei Han, Kaiwen Xiong, Jiaqi Liu, Xinyu Ye, Yaofeng Su, Wenbo Duan, Xinyuan Liu, Cihang Xie, Mohit Bansal, Mingyu Ding, Linjun Zhang, Huaxiu Yao, "Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails," 2026. [Online]. Available: https://arxiv.org/abs/2510.04860v2
+
+### BibTeX
+
+```bibtex
+@misc{han2026alignmenttippingprocessselfevolution,
+      title={Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails}, 
+      author={Siwei Han and Kaiwen Xiong and Jiaqi Liu and Xinyu Ye and Yaofeng Su and Wenbo Duan and Xinyuan Liu and Cihang Xie and Mohit Bansal and Mingyu Ding and Linjun Zhang and Huaxiu Yao},
+      year={2026},
+      eprint={2510.04860},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.04860}, 
+}
+```
+
+---
+
+## 3. An Adaptive Sliding Window Estimator for Positioning of Unmanned Aerial Vehicle Using a Single Anchor
 
 ### 基本信息
 

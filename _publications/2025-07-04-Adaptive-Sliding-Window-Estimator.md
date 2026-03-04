@@ -12,9 +12,9 @@ bibtexurl: 'http://kevinx0522.github.io/files/bibtex-2025-07-04-Adaptive-Sliding
 citation: 'Kaiwen Xiong, Sijia Chen, Wei Dong, "An Adaptive Sliding Window Estimator for Positioning of Uncrewed Aerial Vehicle Using a Single Anchor," in IEEE Sensors Journal, vol. 25, no. 16, pp. 30799-30809, 15 Aug.15, 2025, doi: 10.1109/JSEN.2025.3582282.'
 authors: "Kaiwen Xiong, Sijia Chen, Wei Dong"
 current_author: "Kaiwen Xiong"
-image: "https://github.com/kevinx0522/kevinx0522.github.io/blob/master/_publications/2025-07-04-Adaptive-Sliding-Window-Estimator.md"
+image: "/images/publication/RASWE_graphical_abstract.png"
 header:
-  teaser: "https://github.com/kevinx0522/kevinx0522.github.io/blob/master/_publications/2025-07-04-Adaptive-Sliding-Window-Estimator.md"
+  teaser: "/images/publication/RASWE_graphical_abstract.png"
 ---
 We propose an adaptive sliding window estimator equipped with an estimation reliability evaluator, where the states, noise covariance matrices, and aerial drag are estimated simultaneously.
 

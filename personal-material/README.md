@@ -2,6 +2,8 @@
 
 本文件夹汇总了个人主页项目中所有和个人相关的原始材料，作为重构个人主页的素材库。
 
+注意，应用到个人主页网站展示内容，除了比如中文姓名等内容，须全部使用英文。
+
 ---
 
 ## 文件目录
@@ -22,6 +24,7 @@
 | [images/AUTHOR_KaiwenXiong.png](./images/AUTHOR_KaiwenXiong.png) | 个人头像（侧边栏展示用） |
 | [images/Agent0-vl.png](./images/Agent0-vl.png) | 论文 Agent0-VL 的 teaser 图 |
 | [images/RASWE_graphical_abstract.png](./images/RASWE_graphical_abstract.png) | 论文 Adaptive Sliding Window Estimator 的 teaser 图 |
+| [images/ATP.png](./images/ATP.png) | 论文 Alignment Tipping Process 的 teaser 图 |
 
 ---
 
@@ -32,7 +35,7 @@
 | basic-info.md | `_config.yml` → `author:` 字段 |
 | bio.md | `_pages/about.md` |
 | cv.md | `_pages/cv.md` |
-| publications.md | `_publications/2025-11-25-Agent0-VL.md`、`_publications/2025-07-04-Adaptive-Sliding-Window-Estimator.md`、`files/*.bib` |
+| publications.md | `_publications/2025-11-25-Agent0-VL.md`、`_publications/2025-07-04-Adaptive-Sliding-Window-Estimator.md`、`_publications/2026-02-11-Alignment-Tipping-Process.md`、`files/*.bib` |
 | images/AUTHOR_KaiwenXiong.png | `images/AUTHOR_KaiwenXiong.png` |
 | images/Agent0-vl.png | `images/publication/Agent0-vl.png` |
 | images/RASWE_graphical_abstract.png | `images/publication/RASWE_graphical_abstract.png` |
