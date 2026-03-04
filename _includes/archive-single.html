@@ -28,8 +28,8 @@
 
     {% if post.image and include.type != "grid" %}
       <!-- 左图右文布局：flex 容器 -->
-      <div style="display: flex; gap: 1.2rem; align-items: flex-start;">
-        <div class="archive__item-image" style="flex: 0 0 160px; max-width: 160px;">
+      <div style="display: flex; gap: 1.4rem; align-items: center;">
+        <div class="archive__item-image" style="flex: 0 0 220px; max-width: 220px;">
           {% assign image_path = post.image %}
           {% unless image_path contains "://" %}
             {% assign image_path = image_path | prepend: base_path %}
