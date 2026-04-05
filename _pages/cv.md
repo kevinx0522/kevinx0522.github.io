@@ -42,8 +42,7 @@ Publications
 Skills
 ======
 * **Programming**: Python, C/C++, MATLAB, $$\LaTeX$$
-* **Tools**: Pytorch/Huggingface ecosystem, LLaMA-Factory, vLLM, verl, Git, Vim, Adobe Photoshop
-* **Language**: TOEFL 95 (Reading 29, Listening 25, Speaking 20, Writing 21)
+* **Tools**: Claude Code, Openclaw, Adobe Photoshop
   
 <!-- Talks
 ======
