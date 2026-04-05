@@ -7,7 +7,7 @@ excerpt: 'We identify the Alignment Tipping Process, a critical post-deployment 
 date: 2026-02-11
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/2510.04860v2'
-bibtexurl: 'http://kevinx0522.github.io/files/bibtex-2026-02-11-Alignment-Tipping-Process.bib'
+bibtexurl: 'https://github.com/kevinx0522/kevinx0522.github.io/blob/master/files/bibtex-2026-02-11-Alignment-Tipping-Process.bib'
 citation: 'Siwei Han, Kaiwen Xiong, Jiaqi Liu, Xinyu Ye, Yaofeng Su, Wenbo Duan, Xinyuan Liu, Cihang Xie, Mohit Bansal, Mingyu Ding, Linjun Zhang, Huaxiu Yao, "Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails," 2026. [Online]. Available: https://arxiv.org/abs/2510.04860v2'
 authors: "Siwei Han*, Kaiwen Xiong*, Jiaqi Liu, Xinyu Ye, Yaofeng Su, Wenbo Duan, Xinyuan Liu, Cihang Xie, Mohit Bansal, Mingyu Ding, Linjun Zhang, Huaxiu Yao"
 current_author: "Kaiwen Xiong"
