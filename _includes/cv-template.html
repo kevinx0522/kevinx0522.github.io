@@ -145,25 +145,26 @@
   </div>
   {% endif %}
   
-  {% if cv.publications.size > 0 %}
+  {% assign sorted_publications = site.publications | sort: "date" | reverse %}
+  {% if sorted_publications.size > 0 %}
   <!-- Publications -->
   <div class="cv-section">
     <h2>Publications</h2>
     <ul class="cv-list">
-      {% for publication in cv.publications %}
+      {% for publication in sorted_publications %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ publication.name }}</div>
-          <div class="cv-item-date">{{ publication.releaseDate | slice: 0, 4 }}</div>
+          <div class="cv-item-title">{{ publication.title }}</div>
+          <div class="cv-item-date">{{ publication.date | date: "%Y" }}</div>
         </div>
         <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ publication.publisher }}</div>
-          {% if publication.summary %}
-          <div class="cv-item-detail">{{ publication.summary }}</div>
+          <div class="cv-item-subtitle">{{ publication.venue }}</div>
+          {% if publication.excerpt %}
+          <div class="cv-item-detail">{{ publication.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</div>
           {% endif %}
-          {% if publication.website %}
+          {% if publication.paperurl %}
           <div class="cv-item-detail">
-            <a href="{{ publication.website }}" target="_blank">View Publication</a>
+            <a href="{{ publication.paperurl }}" target="_blank" rel="noopener">View Publication</a>
           </div>
           {% endif %}
         </div>
