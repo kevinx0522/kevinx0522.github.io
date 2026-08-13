@@ -16,7 +16,7 @@
 - 学院：School of Automation and Intelligent Sensing（自动化与智能感知学院，SAIS）
 - 学位：B.S. in Automation（自动化专业本科）
 - 就读年份：2023 — 2027（预计）
-- 当前年级：Year 3 undergraduate（大三在读）
+- 当前年级：Fourth-year undergraduate（大四在读）
 
 ## 个人主页
 
