@@ -155,7 +155,7 @@
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ publication.title }}</div>
-          <div class="cv-item-date">{{ publication.date | date: "%Y" }}</div>
+          <div class="cv-item-date">{% if publication.year %}{{ publication.year }}{% else %}{{ publication.date | date: "%Y" }}{% endif %}</div>
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ publication.venue }}</div>
