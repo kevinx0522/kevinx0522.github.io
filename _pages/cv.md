@@ -44,6 +44,7 @@ Skills
 ======
 * **Programming**: Python, C/C++, MATLAB, $$\LaTeX$$
 * **Tools**: Claude Code, Openclaw, Adobe Photoshop
+* **Language**: TOEFL iBT 5.5/6 (Reading 5, Listening 6, Speaking 5, Writing 5)
   
 <!-- Talks
 ======

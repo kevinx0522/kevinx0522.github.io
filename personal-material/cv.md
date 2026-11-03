@@ -45,4 +45,4 @@ Python, C/C++, MATLAB, LaTeX
 Pytorch / Huggingface ecosystem, LLaMA-Factory, vLLM, verl, Git, Vim, Adobe Photoshop
 
 ### 语言能力
-TOEFL 95（Reading 29 / Listening 25 / Speaking 20 / Writing 21）
+TOEFL iBT 5.5/6（新版六分制；Reading 5 / Listening 6 / Speaking 5 / Writing 5）
